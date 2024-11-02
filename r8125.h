@@ -1563,6 +1563,8 @@ enum RTL8125_register_content {
         LinkStatus = 0x02,
         FullDup = 0x01,
 
+#define RTL8125_FULL_DUPLEX_MASK (_2500bpsF | _1000bpsF | FullDup)
+
         /* DBG_reg */
         Fix_Nak_1 = (1 << 4),
         Fix_Nak_2 = (1 << 3),
